@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Products
+  body
+    h1 Products
+    each p in items
+      div(style="border:1px solid #ccc; padding:10px; margin:10px;")
+        h3= p.name
+        p Quantity: #{p.quantity}
+        p Category: #{p.category || "General"}
